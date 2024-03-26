@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "npm run build"
+  command = "PREFIX_PATHS=true npm run build"
   functions = "lambda"
   X-Frame-Options = "SAMEORIGIN"
 [build.environment]
