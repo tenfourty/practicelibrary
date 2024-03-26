@@ -5,3 +5,8 @@
   X-Frame-Options = "SAMEORIGIN"
 [build.environment]
   NODE_VERSION = "18"
+[[redirects]]
+  from = "/practicelibrary/*"
+  to = "/:splat"
+  status = 200
+  force = true
