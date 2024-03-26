@@ -2,7 +2,8 @@ require("dotenv").config({
   path: ".env",
 });
 
-module.exports = {
+module.exports = {module.exports = {
+  pathPrefix: `/practicelibrary`,
   siteMetadata: {
     title: "Open Practice Library",
     description:
