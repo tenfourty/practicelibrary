@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby"
 import { Box } from "@mui/material";
 import LogoImage from "./logo.svg";
 
@@ -9,7 +10,7 @@ const Logo = ({
   ...rest
 }) => {
   return (
-    <a href="/">
+	<Link to="/">
 		<Box display="flex" alignItems="center" {...rest}>
 		  <Box width={small ? "2.5rem" : "5.5rem"}>
 			<img width="100%" src={LogoImage} alt="Open Practice Library Logo" />
@@ -29,7 +30,7 @@ const Logo = ({
 			Open Practice Library
 		  </Box>
 		</Box>
-    </a>
+	</Link>
   );
 };
 
