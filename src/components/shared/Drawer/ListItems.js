@@ -1,56 +1,62 @@
 import React from "react";
-import { Link as RouterLink } from "gatsby";
+import { Link } from "gatsby";
 import {
   Divider,
   ListItem,
   ListSubheader,
   List,
   Typography,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
 } from "@mui/material";
+import { Home, LibraryBooks, Info, LibraryAdd } from "@mui/icons-material";
 
-function ListItemLink({ primary, to, toggle }) {
-  const renderLink = React.useMemo(
-    () =>
-      React.forwardRef((itemProps, ref) => (
-        <RouterLink to={to} ref={ref} {...itemProps} />
-      )),
-    [to]
-  );
-  return (
-    <ListItem button component={renderLink} onClick={toggle}>
-      <Typography variant="body1">{primary}</Typography>
-    </ListItem>
-  );
-}
+const ListItemButtonLink = (props) => {
+  const { to, ...other } = props;
+  return <ListItemButton component={Link} to={to} {...other} />;
+};
+
 const ListItems = ({ toggle }) => {
   return (
     <List data-testid="drawerPractices">
+      <ListItemButton
+        component="a"
+        href="https://www.jeremybrown.tech/"
+      >
+        <ListItemIcon>
+          <Home />
+        </ListItemIcon>
+        <ListItemText primary="Back to Jeremy Brown" />
+      </ListItemButton>
       <ListSubheader>
         <Typography variant="overline" color="primary">
           Practices
         </Typography>
       </ListSubheader>
-      <ListItemLink to="/" primary="View Library" toggle={toggle} />
-      <ListItemLink
-        to="/learn"
-        primary="Learn More"
-        toggle={toggle}
-        data-testid="SeeEverything"
-      />
-      <ListItemLink
-        to={`${window.location.origin}/admin/#/collections/practice/new`}
-        primary="Add a Practice"
-        toggle={toggle}
-      />
-      <Divider />
+      <ListItemButtonLink to="/">
+        <ListItemIcon>
+          <LibraryBooks />
+        </ListItemIcon>
+        Library Home
+      </ListItemButtonLink>
       <ListSubheader>
         <Typography variant="overline" color="primary">
-          Community
+          Learn and Contribute
         </Typography>
       </ListSubheader>
-      <ListItemLink to="/about" primary="About Us" data-testid="LearnAboutUs" />
-      <ListItemLink to="/blog" primary="Blog" />
-      <ListItemLink to="/page/contribution-guide" primary="Contributing" />
+      <ListItemButtonLink to="/about/">
+        <ListItemIcon>
+          <Info />
+        </ListItemIcon>
+        About this Library
+      </ListItemButtonLink>
+      <ListItemButtonLink to="/page/contribution-guide/">
+        <ListItemIcon>
+          <LibraryAdd />
+        </ListItemIcon>
+        Contributing
+      </ListItemButtonLink>
     </List>
   );
 };

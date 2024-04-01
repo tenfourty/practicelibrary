@@ -1,14 +1,14 @@
 {
-  "name": "openpracticelibrary",
-  "description": "Open Practice Library web application",
+  "name": "practicelibrary",
+  "description": "Jeremy Brown's Practice Library web application",
   "version": "2.2.0",
   "author": "Open Practice Library Community",
-  "homepage": "https://openpracticelibrary.com",
+  "homepage": "https://jeremybrown.tech/practicelibrary",
   "bugs": {
-    "url": "https://github.com/openpracticelibrary/openpracticelibrary/issues",
-    "email": "info@openpracticelibrary.com"
+    "url": "https://github.com/tenfourty/practicelibrary/issues",
+    "email": "hi@jeremybrown.tech"
   },
-  "repository": "github:openpracticelibrary/openpracticelibrary",
+  "repository": "github:tenfourty/practicelibrary",
   "dependencies": {
     "@emotion/cache": "^11.10.5",
     "@emotion/react": "^11.10.5",

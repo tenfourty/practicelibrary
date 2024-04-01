@@ -1,9 +1,10 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
 import HeroColor from "../components/shared/HeroColor";
-import HistoryValues from "../components/About/HistoryValues";
-import ProductTeam from "../components/About/ProductTeam";
-import Contributors from "../components/About/Contributors";
+import Intro from "../components/About/Intro";
+import MobiusNavigate from "../components/About/MobiusNavigate";
+import Who from "../components/About/Who";
+import OPLMobius from "../components/About/OPLMobius";
 import Layout from "../components/Layout";
 
 export default function About(props) {
@@ -21,14 +22,15 @@ export default function About(props) {
         <HeroColor type="gradient" gradient={1}>
           <Container maxWidth="md">
             <Typography component="h1" variant="h3" data-testid="hellotext">
-              About Us
+              About My Practice Library
             </Typography>
           </Container>
         </HeroColor>
         <Container maxWidth="md">
-          <HistoryValues />
-          <ProductTeam />
-          <Contributors />
+          <Intro />
+          <MobiusNavigate />
+          <Who />
+          <OPLMobius />
         </Container>
       </Box>
     </Layout>

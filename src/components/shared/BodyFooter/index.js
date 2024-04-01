@@ -40,9 +40,11 @@ const BodyFooter = () => {
             marginBottom={{ xs: 2, md: 0 }}
           >
             <CustomLogo horizontal small />
+            <Typography> is a curated version of the&nbsp;</Typography>
+            <OPLLogo horizontal small />
           </Box>
           <Box display="flex" flexDirection="column" justifyContent="center">
-            <Typography variant="h6">Connect with our Community:</Typography>
+            <Typography variant="h6">Connect with the Community:</Typography>
             <Grid container spacing={2}>
               <Grid item>
                 <Link
@@ -117,14 +119,7 @@ const BodyFooter = () => {
               <CCHeart />
               Creative Commons Attribution 4.0
             </Link>{" "}
-            International license. This site is graciously hosted by{" "}
-            <Link
-              href="https://www.netlify.com/open-source/" 
-              target="_blank"
-              rel="noopener"
-            >
-              Netlify
-              </Link>{" "}
+            International license.
           </Typography>
         </Box>
       </Container>

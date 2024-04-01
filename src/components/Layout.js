@@ -11,14 +11,14 @@ const Layout = ({ ogContent, children }) => (
       <title>
         {ogContent && ogContent.title
           ? ogContent.title
-          : "Open Practice Library"}
+          : "Jeremy Brown's Practice Library"}
       </title>
       <meta
         property="og:title"
         content={
           ogContent && ogContent.title
             ? ogContent.title
-            : "Open Practice Library"
+            : "Jeremy Brown's Practice Library"
         }
       />
       <meta
@@ -29,7 +29,7 @@ const Layout = ({ ogContent, children }) => (
             : "Practices that empower teams to collaborate and deliver iteratively"
         }
       />
-      <meta property="og:site_name" content="Open Practice Library" />
+      <meta property="og:site_name" content="Jeremy Brown's Practice Library" />
       <meta
         property="og:image"
         content={

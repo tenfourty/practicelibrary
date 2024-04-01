@@ -6,7 +6,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import { Feedback, Mic } from "@mui/icons-material";
+import { Feedback, Newspaper } from "@mui/icons-material";
 
 const DrawerFooter = () => (
   <Box
@@ -17,25 +17,21 @@ const DrawerFooter = () => (
     <List>
       <ListItemButton
         component="a"
-        href="https://anchor.fm/openpracticelibrary"
-        target="_blank"
-        rel="noreferrer"
+        href="https://www.jeremybrown.tech/newsletter/"
       >
         <ListItemIcon>
-          <Mic />
+          <Newspaper />
         </ListItemIcon>
-        <ListItemText primary="Our Podcast" />
+        <ListItemText primary="Subscribe to my Newsletter" />
       </ListItemButton>
       <ListItemButton
         component="a"
-        href="https://forms.gle/tyKLtvFf39MoWqsv7"
-        target="_blank"
-        rel="noreferrer"
+        href="https://www.jeremybrown.tech/contact/"
       >
         <ListItemIcon>
           <Feedback />
         </ListItemIcon>
-        <ListItemText primary="Send Feedback" />
+        <ListItemText primary="Give me Feedback" />
       </ListItemButton>
     </List>
   </Box>

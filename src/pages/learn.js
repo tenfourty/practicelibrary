@@ -49,7 +49,7 @@ const Learn = () => (
           </Typography>
           <Box marginBottom={6}>
             <Typography component="p" gutterBottom variant="h6">
-              The Open Practice Library is an open source, community-driven
+              This Practice Library is based on an open source, community-driven
               inspired library of best practices and tools.
             </Typography>
             <Typography component="p" variant="h6">
@@ -75,18 +75,18 @@ const Learn = () => (
         <Box my={6}>
           <Typography variant="h5" gutterBottom>
             That can mean a lot of things to a lot of different kinds of people.
-            And the Open Practice Library can help all of them.
-          </Typography>
-          <Typography gutterBottom>
-            - A product owner who needs to build the right thing, the right way.
-          </Typography>
-          <Typography gutterBottom>
-            - A stakeholder who needs a roadmap to deliver metrics-based
-            business outcomes.
+            And this Practice Library can help all of them.
           </Typography>
           <Typography gutterBottom>
             - A team lead who wants to get everyone’s input toward and aligned
             to the same goal.
+          </Typography>
+          <Typography gutterBottom>
+            - A product manager who needs to build the right thing, the right way.
+          </Typography>
+          <Typography gutterBottom>
+            - A stakeholder who needs a roadmap to deliver metrics-based
+            business outcomes.
           </Typography>
           <Box marginTop={2}>
             <Typography component="p" variant="body1">
