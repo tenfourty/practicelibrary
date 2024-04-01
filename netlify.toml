@@ -1,7 +1,0 @@
-[build]
-  publish = "public"
-  command = "PREFIX_PATHS=true npm run build"
-  functions = "lambda"
-  X-Frame-Options = "SAMEORIGIN"
-[build.environment]
-  NODE_VERSION = "18"
