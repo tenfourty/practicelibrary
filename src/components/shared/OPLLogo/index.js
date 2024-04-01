@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { Box } from "@mui/material";
 import LogoImage from "./logo.svg";
 
-const Logo = ({
+const OPLLogo = ({
   color = "text.primary",
   small = false,
   horizontal = false,
@@ -34,4 +34,4 @@ const Logo = ({
   );
 };
 
-export default Logo;
+export default OPLLogo;

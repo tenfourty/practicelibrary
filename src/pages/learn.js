@@ -7,7 +7,7 @@ import Explore from "../components/Learn/Explore";
 import Partnerships from "../components/Learn/Partnerships";
 import { ArrowDownward } from "@mui/icons-material";
 import { Box, Button, Container, Hidden, Typography } from "@mui/material";
-import Logo from "../components/shared/Logo";
+import OPLLogo from "../components/shared/OPLLogo";
 
 const scrollTo = React.createRef();
 const scrollDown = () => {
@@ -36,10 +36,10 @@ const Learn = () => (
     <Box display="flex" flexDirection="column">
       <Box position="absolute" top="2rem" left="2rem" color="common.white">
         <Hidden smDown implementation="js">
-          <Logo color="common.white" />
+          <OPLLogo color="common.white" />
         </Hidden>
         <Hidden smUp implementation="js">
-          <Logo color="common.white" small horizontal />
+          <OPLLogo color="common.white" small horizontal />
         </Hidden>
       </Box>
       <HeroImage opacity={0.6}>

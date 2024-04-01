@@ -16,7 +16,8 @@ import {
   LinkedIn,
 } from "@mui/icons-material";
 import { CCHeart } from "../../../assets/icons/index";
-import Logo from "../../../components/shared/Logo";
+import CustomLogo from "../../../components/shared/CustomLogo";
+import OPLLogo from "../../../components/shared/OPLLogo";
 import logoLabs from "../../../assets/images/logo-red-hat-open-innovation-labs-a-standard-rgb.png";
 
 const BodyFooter = () => {
@@ -38,11 +39,7 @@ const BodyFooter = () => {
             flexDirection={{ xs: "column", md: "row" }}
             marginBottom={{ xs: 2, md: 0 }}
           >
-            <Logo horizontal small />
-            <Typography>powered by</Typography>
-            <Box marginLeft={1}>
-              <img src={logoLabs} alt="Open Innovation Labs Logo" />
-            </Box>
+            <CustomLogo horizontal small />
           </Box>
           <Box display="flex" flexDirection="column" justifyContent="center">
             <Typography variant="h6">Connect with our Community:</Typography>

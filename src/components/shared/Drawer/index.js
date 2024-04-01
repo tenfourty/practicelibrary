@@ -4,7 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ListItems from "./ListItems";
 import DrawerFooter from "./DrawerFooter";
-import Logo from "../../../components/shared/Logo";
+import CustomLogo from "../../../components/shared/CustomLogo";
 
 const OPLDrawer = () => {
   const [open, toggle] = useReducer((drawerOpen) => !drawerOpen, false);
@@ -80,7 +80,7 @@ const OPLDrawer = () => {
               justifyContent="center"
               paddingTop={2}
             >
-              <Logo small horizontal />
+              <CustomLogo small horizontal />
             </Box>
             <ListItems drawerOpen={open} toggle={toggle} />
           </Box>
