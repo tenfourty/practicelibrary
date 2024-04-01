@@ -29,7 +29,7 @@ const CallToAction = (frontmatter) => {
         color="secondary"
         endIcon={<ArrowForward />}
         onClick={() =>
-          (window.location.href = `${window.location.origin}/admin/`)
+          (window.location.href = `https://openpracticelibrary.com/admin/`)
         }
       >
         Start Now

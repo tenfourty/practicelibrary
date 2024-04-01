@@ -8,7 +8,7 @@ const Login = (props) => {
       variant="contained"
       size="small"
       onClick={() =>
-        (window.location.href = `${window.location.origin}/admin/#/collections/practice/entries/${props.practiceTitle}`)
+        (window.location.href = `https://openpracticelibrary.com/admin/#/collections/practice/entries/${props.practiceTitle}`)
       }
     >
       Improve This Practice!
