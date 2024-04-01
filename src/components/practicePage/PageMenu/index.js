@@ -14,8 +14,7 @@ const sections = [
   { title: "Why", ref: "whyDoRef" },
   { title: "How", ref: "howToRef" },
   { title: "Look", ref: "mediaRef" },
-  { title: "Links", ref: "resourceRef" },
-  { title: "Discuss", ref: "discussRef" },
+  { title: "Links", ref: "resourceRef" }
 ];
 
 export default function PageMenu(props) {
