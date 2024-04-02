@@ -19,7 +19,7 @@ export default function About(props) {
       }}
     >
       <Box data-testid="aboutPageGrid" display="flex" flexDirection="column">
-        <HeroColor type="gradient" gradient={1}>
+        <HeroColor type="gradient" gradient={5}>
           <Container maxWidth="md">
             <Typography component="h1" variant="h3" data-testid="hellotext">
               About My Practice Library

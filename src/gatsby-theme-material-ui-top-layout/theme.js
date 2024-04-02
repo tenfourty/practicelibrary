@@ -22,9 +22,9 @@ const theme = createTheme({
       white: "#fff",
     },
     primary: {
-      dark: "#00075e",
-      main: "#272c8c",
-      light: "#5d55bd",
+      dark: "#5A0203",
+      main: "#a2311f",
+      light: "#FC1D1E",
     },
     secondary: {
       dark: "#29009a",
@@ -44,10 +44,14 @@ const theme = createTheme({
       main: "#76F598",
     },
     foundationcolor: {
-      main: "#272c8c"
+      dark: "#00075e",
+      main: "#272c8c",
+      light: "#5d55bd",
     },
     discoverycolor: {
-      main: "#6535cc"
+      dark: "#29009a",
+      main: "#6535cc",
+      light: "#9b63ff",
     },
     optionscolor: {
       main: "#E30F8D"
@@ -131,6 +135,7 @@ const theme = createTheme({
     "linear-gradient(135deg, #6535cc 0%, #9b63ff 100%)",
     "linear-gradient(135deg, #E30F8D 0%, #ff5bbd 100%)",
     "linear-gradient(135deg, #FF6D38 0%, #ff9f65 100%)",
+    "linear-gradient(135deg, #5A0203 0%, #FC1D1E 100%)"
   ],
   shape: {
     borderRadius: 4,

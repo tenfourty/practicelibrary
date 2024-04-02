@@ -51,7 +51,7 @@ const AdditionalPage = (props) => {
       }}
     >
       <Box data-testid="additionalPage" display="flex" flexDirection="column">
-        <HeroColor type="gradient" gradient={1}>
+        <HeroColor type="gradient" gradient={5}>
           <Container maxWidth="md">
             <Typography component="h1" variant="h3">
               {props.data.markdownRemark.frontmatter.title}
