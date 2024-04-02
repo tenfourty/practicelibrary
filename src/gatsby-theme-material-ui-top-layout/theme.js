@@ -43,6 +43,18 @@ const theme = createTheme({
     success: {
       main: "#76F598",
     },
+    foundationcolor: {
+      main: "#272c8c"
+    },
+    discoverycolor: {
+      main: "#6535cc"
+    },
+    optionscolor: {
+      main: "#E30F8D"
+    },
+    deliverycolor: {
+      main: "#FF6D38"
+    },
     grey: {
       main: grey[300],
       dark: grey[400],

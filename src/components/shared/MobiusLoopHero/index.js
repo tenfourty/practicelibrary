@@ -45,7 +45,7 @@ const MobiusLoopHero = ({ showContent = true, displaySection = "all" }) => {
           <Box
             color={
               section === "discovery" || section === "all"
-                ? "secondary.main"
+                ? "discoverycolor.main"
                 : "grey.400"
             }
             role="button"
@@ -76,7 +76,7 @@ const MobiusLoopHero = ({ showContent = true, displaySection = "all" }) => {
           <Box
             color={
               section === "options" || section === "all"
-                ? "error.main"
+                ? "optionscolor.main"
                 : "grey.400"
             }
             onClick={() => {
@@ -103,7 +103,7 @@ const MobiusLoopHero = ({ showContent = true, displaySection = "all" }) => {
           <Box
             color={
               section === "delivery" || section === "all"
-                ? "warning.main"
+                ? "deliverycolor.main"
                 : "grey.400"
             }
             marginLeft={1}
@@ -132,7 +132,7 @@ const MobiusLoopHero = ({ showContent = true, displaySection = "all" }) => {
         <Box
           color={
             section === "foundation" || section === "all"
-              ? "primary.main"
+              ? "foundationcolor.main"
               : "grey.400"
           }
           margin="auto"
