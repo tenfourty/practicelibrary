@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
-import mobiusContent from "../../../utilities/mobuisContent";
+import mobiusContent from "../../../utilities/mobiusContent";
 
 const PracticeCard = ({
   coverImage,

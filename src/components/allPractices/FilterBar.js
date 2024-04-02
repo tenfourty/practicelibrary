@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Grid } from "@mui/material";
 import { navigate } from "gatsby";
-import mobiusContent from "../../utilities/mobuisContent";
+import mobiusContent from "../../utilities/mobiusContent";
 
 const FilterBar = ({ selectedFilter }) => {
   const selected = selectedFilter.toLowerCase();
