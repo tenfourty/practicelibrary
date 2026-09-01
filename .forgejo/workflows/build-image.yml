@@ -1,0 +1,18 @@
+# Build the practicelibrary container image and push it to the forge
+# registry. Consumed by k8s/apps/websites/ghost-jeremybrown in the
+# homelab repo (wave-5 migration, 2026-09-02).
+name: build-image
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: docker
+    steps:
+      - uses: actions/checkout@v4
+      - name: build and push
+        run: |
+          docker login git.tenfourty.site -u jeremy -p "${{ secrets.REGISTRY_TOKEN }}"
+          docker build -t git.tenfourty.site/jeremy/practicelibrary:latest -t git.tenfourty.site/jeremy/practicelibrary:${GITHUB_SHA::12} .
+          docker push git.tenfourty.site/jeremy/practicelibrary:latest
+          docker push git.tenfourty.site/jeremy/practicelibrary:${GITHUB_SHA::12}
