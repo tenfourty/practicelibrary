@@ -1,6 +1,8 @@
-# Build the practicelibrary container image and push it to the forge
-# registry. Consumed by k8s/apps/websites/ghost-jeremybrown in the
-# homelab repo (wave-5 migration, 2026-09-02).
+# Build the practicelibrary container image IN-CLUSTER and push to the
+# forge registry. Pattern: per-job dind service + docker:cli job
+# container (runner config untouched; the outer privileged dind runs
+# both). First proven 2026-09-02 — template for all forge image builds
+# (incl. the talos i915 extension rebuilds).
 name: build-image
 on:
   push:
@@ -8,8 +10,23 @@ on:
 jobs:
   build:
     runs-on: docker
+    container:
+      image: docker:28-cli
+    services:
+      dind:
+        image: docker:28-dind
+        options: >-
+          --privileged
+        env:
+          DOCKER_TLS_CERTDIR: ""
+    env:
+      DOCKER_HOST: tcp://dind:2375
     steps:
       - uses: actions/checkout@v4
+      - name: wait for daemon
+        run: |
+          for i in $(seq 1 30); do docker info >/dev/null 2>&1 && break; sleep 2; done
+          docker info >/dev/null
       - name: build and push
         run: |
           docker login git.tenfourty.site -u jeremy -p "${{ secrets.REGISTRY_TOKEN }}"
